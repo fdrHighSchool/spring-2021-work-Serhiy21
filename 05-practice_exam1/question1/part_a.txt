@@ -1,0 +1,12 @@
+public static String scrambleWord(String word)
+{
+  for("A".equals(word.substring(i-1,i)) && ! "A".equals(wprd.substring(i, i+1)))
+  {
+     word = word.substring(0, i - 1) +
+            word.substring(i, i + 1) +
+            word.substring(i - 1, i) +
+            word.substring(i + 1);
+            i++
+            }
+            return word;
+            }
