@@ -1,0 +1,11 @@
+private double computeTemp(int row, int col){
+   private boolean isBoundary(){
+      return row == 0 || rpw == temps.length - 1 || cpl == 0 || col == temps[0].length - 1;
+   }
+   
+   if(isBoundary()){
+      return temp[row][col];
+   }else{
+      return (temp[row-1][col] + temp[row + 1][col] + temp[row][col - 1] + temp[row][col + 1]) / 4.0;
+      }
+   }
