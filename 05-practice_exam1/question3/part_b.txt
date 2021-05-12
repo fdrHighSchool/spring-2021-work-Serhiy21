@@ -1,0 +1,20 @@
+public boolean updateAllTemps(double tolerance){
+   double[][] updated = new double[temps.length][temps[0].length];
+   boolean isALLWithinTolerance = True;
+   
+   private boolean isWithinTolerance(double temp, double newTemp){
+      return Math.abs(temp - newTemp)<=tolerance);
+   }
+   
+   for(int i = 0; i < updated ; i++){
+      for(int j = 0; j < updated[0].length; j++){
+         double newTemp = computeTemp(i,j);
+         
+         updated[i][j] = computeTemp(i,j);
+         isAllWithinTolerance = isAllWithinTolerance && isWithinTolerance(newTemp, temp[i][j]);
+         }
+      }
+      
+      temps = updated;
+      return isAllWithinTolerance;
+      }
