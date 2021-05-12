@@ -1,0 +1,15 @@
+public boolean record(int score){
+   int i = 0;
+   while(i < scoreList.size && scoreList.get(i).getScore() < score){
+   i++;
+   }
+   
+   boolean exists = i < scoreList.size() && scoreList.get(i).getScore() == score;
+   if(exists){
+      scoreList.get(i).increment();
+   }else{
+      scoreList.add(i, new ScoreInfo(score));
+      }
+      
+      return !exists;
+      }
