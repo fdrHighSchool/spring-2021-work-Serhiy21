@@ -1,0 +1,29 @@
+public static int [][] resize(int [][] array2D){
+
+int[][] new2dArray = new int[numNonZeroRows(array2D)][array2D[0].length];
+
+int row = 0;
+
+while(row < new2dArray.length){
+
+int oldarrayRow = 0;
+
+if(isNonZeroRow(array2D, oldarrayRow){
+
+for(int c = 0; c < new2dArray[row]; c++){
+
+new2dArray[row][c] = new2dArray[oldarrayRow][c]
+
+}
+
+row++;
+
+}
+
+oldarrayRow++;
+
+}
+
+return new2dArray;
+
+}
